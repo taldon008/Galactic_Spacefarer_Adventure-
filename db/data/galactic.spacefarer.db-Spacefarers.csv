@@ -1,0 +1,4 @@
+ID,name,stardustCollection,wormholeNav,originPlanet,spacesuitCol,department_ID,createdAt,createdBy,modifiedAt,modifiedBy
+20912583-73cb-4eba-94e1-25f3d9e46d8d,name-2091258,77,35,originPlanet-2091258,spacesuitCol-2091258,20500279-c744-4eab-a8e5-de55d759759d,2022-08-04T23:00:00.000Z,createdBy.18tmi@example.com,2013-02-06T23:00:00.000Z,modifiedBy.18tmi@example.com
+20912598-a2d1-421f-a0a5-71782c24710d,name-2091259,100,84,originPlanet-2091259,spacesuitCol-2091259,20500279-c744-4eab-a8e5-de55d759759d,2005-04-29T23:00:00.000Z,createdBy.18tmj@example.net,2021-01-06T23:00:00.000Z,modifiedBy.18tmj@example.net
+20912600-ed78-42c8-9814-d0981dbb3101,name-2091260,72,62,originPlanet-2091260,spacesuitCol-2091260,20500279-c744-4eab-a8e5-de55d759759d,2008-02-21T23:00:00.000Z,createdBy.18tmk@example.com,2013-05-24T23:00:00.000Z,modifiedBy.18tmk@example.org

@@ -1,0 +1,38 @@
+{
+  "name": "Galactic_Spacefarer_Adventure-",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@sap/cds": "^10"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^3",
+    "cds-plugin-ui5": "^0.17.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-galaxy": "cds watch --open galaxy/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "Dominik": {
+            "password": "PwDominik",
+            "roles": [
+              "SpacefarerUser"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/galaxy"
+  ]
+}
