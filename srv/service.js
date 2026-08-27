@@ -1,4 +1,5 @@
 import cds from '@sap/cds'
+import { sendWelcomeEmail } from './mailService.js'
 
 export class SpacefarerService extends cds.ApplicationService { init() {
 
@@ -29,8 +30,20 @@ export class SpacefarerService extends cds.ApplicationService { init() {
     }
   })
 
-  this.after (['CREATE', 'UPDATE'], Spacefarers, async (req, spacefarers) => { //Also did the validation in case of Update
-    
+  this.after (['CREATE', 'UPDATE'], Spacefarers, async (spacefarers, req) => { //Also did the validation in case of Update
+        try {
+            await sendWelcomeEmail(req.data);
+
+            req.info(
+                "Welcome email was sent." 
+            );
+        } catch (error) {
+            console.error("Email sending failed:", error);
+
+            req.warn(
+                "The Spacefarer was created, but the welcome email could not be sent."
+            );
+        }
   })
 
 
