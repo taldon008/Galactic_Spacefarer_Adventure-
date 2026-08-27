@@ -5,6 +5,11 @@ export class SpacefarerService extends cds.ApplicationService { init() {
 
   const { Spacefarers, Departments, Positions } = cds.entities('SpacefarerService')
 
+  /**
+   * Handler for before create/update of Spacefarers
+   * Validates and increments the properties additionally
+   * Sends warning messages if the original value was not enough
+   */
   this.before (['CREATE', 'UPDATE'], Spacefarers, async (req, spacefarers) => { //Also did the validation in case of Update
     const warnings = [];
 
@@ -30,6 +35,11 @@ export class SpacefarerService extends cds.ApplicationService { init() {
     }
   })
 
+  /**
+   * Handler for after create/update of Spacefarers
+   * Because the increment will prepare correctly the Spacefarers, it will automatically sends them to their journey
+   * Triggers the sending of the email
+   */
   this.after (['CREATE', 'UPDATE'], Spacefarers, async (spacefarers, req) => { //Also did the validation in case of Update
         try {
             await sendWelcomeEmail(req.data);
@@ -46,22 +56,20 @@ export class SpacefarerService extends cds.ApplicationService { init() {
         }
   })
 
+  /**
+   * Read is implemented only for the authenticated users
+   */
+  this.before('READ', Spacefarers, async (req) => {
+      const planet = req.user.attributes.planet[0]
 
-  // this.after ('READ', Spacefarers, async (spacefarers, req) => {
-  //   console.log('After READ Spacefarers', spacefarers)
-  // })
-  // this.before (['CREATE', 'UPDATE'], Departments, async (req) => {
-  //   console.log('Before CREATE/UPDATE Departments', req.data)
-  // })
-  // this.after ('READ', Departments, async (departments, req) => {
-  //   console.log('After READ Departments', departments)
-  // })
-  // this.before (['CREATE', 'UPDATE'], Positions, async (req) => {
-  //   console.log('Before CREATE/UPDATE Positions', req.data)
-  // })
-  // this.after ('READ', Positions, async (positions, req) => {
-  //   console.log('After READ Positions', positions)
-  // })
+      if (!planet) {
+          return req.reject(403, 'No planet assigned to the current user.')
+      }
+
+      req.query.where({
+          originPlanet: planet
+      })
+  })
 
   return super.init()
 }}

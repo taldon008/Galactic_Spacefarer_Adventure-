@@ -4,10 +4,15 @@ const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
         user: "taldon008@gmail.com",
-        pass: "cvdf qflw satn ffle"
+        pass: "cvdf qflw satn ffle" //use env
     }
 });
 
+/**
+ * Sends the email for my user with the corresponding properties
+ * env file could be used
+ * @param {object} spacefarer 
+ */
 export async function sendWelcomeEmail(spacefarer) {
     await transporter.sendMail({
         from: "taldon008@gmail.com",

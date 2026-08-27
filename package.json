@@ -20,11 +20,27 @@
       "auth": {
         "kind": "mocked",
         "users": {
-          "Dominik": {
-            "password": "PwDominik",
+          "planetXUser": {
+            "password": "test",
             "roles": [
-              "SpacefarerUser"
-            ]
+              "authenticated-user"
+            ],
+            "attributes": {
+              "planet": [
+                "Planet X"
+              ]
+            }
+          },
+          "planetYUser": {
+            "password": "test",
+            "roles": [
+              "authenticated-user"
+            ],
+            "attributes": {
+              "planet": [
+                "Planet Y"
+              ]
+            }
           }
         }
       }
