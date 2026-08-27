@@ -5,27 +5,26 @@ annotate service.Spacefarers with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'name',
                 Value : name,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'stardustCollection',
+                Label : '{i18n>Stardustcollection}',
                 Value : stardustCollection,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'wormholeNav',
+                Label : '{i18n>Wormholenav}',
                 Value : wormholeNav,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'originPlanet',
+                Label : '{i18n>Originplanet}',
                 Value : originPlanet,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'spacesuitCol',
+                Label : '{i18n>Spacesuitcol}',
                 Value : spacesuitCol,
             },
         ],
@@ -41,30 +40,45 @@ annotate service.Spacefarers with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'name',
+            Label : '{i18n>Name1}',
             Value : name,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'stardustCollection',
+            Label : '{i18n>Stardustcollection}',
             Value : stardustCollection,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'wormholeNav',
+            Label : '{i18n>Wormholenav}',
             Value : wormholeNav,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'originPlanet',
+            Label : '{i18n>Originplanet}',
             Value : originPlanet,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'spacesuitCol',
+            Label : '{i18n>Spacesuitcol}',
             Value : spacesuitCol,
         },
     ],
+    UI.SelectionFields : [
+        name,
+        originPlanet,
+        spacesuitCol,
+        wormholeNav,
+        stardustCollection,
+    ],
+    UI.HeaderInfo : {
+        TypeName : '{i18n>Spacefarers}',
+        TypeNamePlural : '',
+        Title : {
+            $Type : 'UI.DataField',
+            Value : name,
+        },
+    },
 );
 
 annotate service.Spacefarers with {
@@ -89,3 +103,23 @@ annotate service.Spacefarers with {
     }
 };
 
+annotate service.Spacefarers with {
+    name @Common.Label : '{i18n>Name}'
+};
+
+annotate service.Spacefarers with {
+    originPlanet @Common.Label : '{i18n>OriginPlanet}'
+};
+
+annotate service.Spacefarers with {
+    spacesuitCol @Common.Label : '{i18n>Spacesuitcol}'
+};
+
+annotate service.Spacefarers with {
+    wormholeNav @Common.Label : '{i18n>Wormholenav}'
+};
+
+annotate service.Spacefarers with {
+    stardustCollection @Common.Label : '{i18n>Stardustcollection}'
+    };
+    

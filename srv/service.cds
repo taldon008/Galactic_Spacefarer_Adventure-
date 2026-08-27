@@ -10,3 +10,5 @@ service SpacefarerService {
     entity Departments as projection on db.Departments;
     entity Positions as projection on db.Positions;
 }
+
+annotate SpacefarerService.Spacefarers with @odata.draft.enabled;
