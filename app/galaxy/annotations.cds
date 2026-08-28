@@ -171,7 +171,8 @@ Capabilities: {
    },
 });
 
-annotate SpacefarerService.Spacefarers with {
+//annotation for value help dropdown for origin planet
+annotate service.Spacefarers with {
     originPlanet @(
         Common.ValueList: {
             CollectionPath: 'Planets',

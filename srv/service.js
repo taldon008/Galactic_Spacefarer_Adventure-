@@ -83,6 +83,7 @@ export class SpacefarerService extends cds.ApplicationService {
         return req.reject(403, "You don't have access to any planet.");
       }
 
+      //only the corresponding planet's spacefarers
       req.query.where({
         originPlanet: {
           in: allowedPlanets
