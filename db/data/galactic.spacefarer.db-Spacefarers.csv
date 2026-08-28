@@ -1,21 +1,11 @@
-ID,name,stardustCollection,wormholeNav,originPlanet,spacesuitCol,department_ID,createdAt,createdBy,modifiedAt,modifiedBy
-727ede9d-6df9-4241-bd58-ac07cd4ee758,Nova Sterling,75,12,Planet X,Silver,ASTRO,2026-08-01T08:00:00Z,spacefarer.admin@galaxy.example,2026-08-02T10:00:00Z,taldon008@gmail.com
-272d1787-463d-4483-9fad-989621e8f8d9,Orion Vega,88,19,Planet X,Blue,NAV,2026-08-01T17:00:00Z,spacefarer.admin@galaxy.example,2026-08-03T19:00:00Z,taldon008@gmail.com
-47e3f7d1-8e15-42fe-869d-83c83b3b3d41,Lyra Solis,101,26,Planet X,White,ENG,2026-08-02T02:00:00Z,spacefarer.admin@galaxy.example,2026-08-05T04:00:00Z,taldon008@gmail.com
-e103a0dc-0621-4790-943f-0ab9dd751a2b,Atlas Kepler,114,33,Planet X,Orange,SCI,2026-08-02T11:00:00Z,spacefarer.admin@galaxy.example,2026-08-06T13:00:00Z,taldon008@gmail.com
-c765e76d-03b1-4f19-9d1b-3bb07e18c370,Luna Hawking,127,40,Planet X,Black,MED,2026-08-02T20:00:00Z,spacefarer.admin@galaxy.example,2026-08-07T22:00:00Z,taldon008@gmail.com
-ffb1bdf1-c4a3-4a1c-84d1-04b08872e4ce,Cosmo Drake,140,47,Planet X,Red,ASTRO,2026-08-03T05:00:00Z,spacefarer.admin@galaxy.example,2026-08-04T07:00:00Z,taldon008@gmail.com
-3ca0630f-8812-48f5-a789-489887eae227,Stella Ray,153,54,Planet X,Green,NAV,2026-08-03T14:00:00Z,spacefarer.admin@galaxy.example,2026-08-05T16:00:00Z,taldon008@gmail.com
-487459fc-6eb4-4851-9b90-5ad180bd4ed1,Apollo Quinn,166,61,Planet X,Gold,ENG,2026-08-03T23:00:00Z,spacefarer.admin@galaxy.example,2026-08-07T01:00:00Z,taldon008@gmail.com
-53299b9d-7be9-44ec-acf6-686872bb333b,Vega Armstrong,179,68,Planet X,Purple,SCI,2026-08-04T08:00:00Z,spacefarer.admin@galaxy.example,2026-08-08T10:00:00Z,taldon008@gmail.com
-633c3c3a-fe41-4c23-9a61-c141e02bbb3d,Aurora Bell,192,75,Planet X,Gray,MED,2026-08-04T17:00:00Z,spacefarer.admin@galaxy.example,2026-08-09T19:00:00Z,taldon008@gmail.com
-ef96efef-781e-4322-a4d8-9658eab1873b,Titan Brooks,205,82,Planet Y,Silver,ASTRO,2026-08-05T02:00:00Z,spacefarer.admin@galaxy.example,2026-08-06T04:00:00Z,taldon008@gmail.com
-d1dc7f18-5b86-4295-ba58-123cfbbe9bcf,Celeste Morgan,218,89,Planet Y,Blue,NAV,2026-08-05T11:00:00Z,spacefarer.admin@galaxy.example,2026-08-07T13:00:00Z,taldon008@gmail.com
-4e851d9b-4905-4792-b8d1-39dbd98ba11d,Leo Cassini,231,96,Planet Y,White,ENG,2026-08-05T20:00:00Z,spacefarer.admin@galaxy.example,2026-08-08T22:00:00Z,taldon008@gmail.com
-5a0e35c4-3b5f-4bf2-9c3e-fb9e369fcce9,Mira Newton,244,18,Planet Y,Orange,SCI,2026-08-06T05:00:00Z,spacefarer.admin@galaxy.example,2026-08-10T07:00:00Z,taldon008@gmail.com
-237d529a-0043-4098-8c86-82879d3f9870,Phoenix Carter,257,25,Planet Y,Black,MED,2026-08-06T14:00:00Z,spacefarer.admin@galaxy.example,2026-08-11T16:00:00Z,taldon008@gmail.com
-10539d1e-ea4a-4224-bb82-b43d77e8947f,Andromeda Reed,270,32,Planet Y,Red,ASTRO,2026-08-06T23:00:00Z,spacefarer.admin@galaxy.example,2026-08-08T01:00:00Z,taldon008@gmail.com
-7d6d0bda-1961-4b8d-9a1b-9daeb82e7313,Sirius Parker,283,39,Planet Y,Green,NAV,2026-08-07T08:00:00Z,spacefarer.admin@galaxy.example,2026-08-09T10:00:00Z,taldon008@gmail.com
-04dd6288-6884-4130-a20f-746226272e8f,Elara Collins,76,46,Planet Y,Gold,ENG,2026-08-07T17:00:00Z,spacefarer.admin@galaxy.example,2026-08-10T19:00:00Z,taldon008@gmail.com
-e6b56bc9-1434-4649-b334-63cd423ceec8,Rigel Bennett,89,53,Planet Y,Purple,SCI,2026-08-08T02:00:00Z,spacefarer.admin@galaxy.example,2026-08-12T04:00:00Z,taldon008@gmail.com
-bf86df96-b938-4bb9-b25e-bf73b463d0a6,Callisto Hayes,102,60,Planet Y,Gray,MED,2026-08-08T11:00:00Z,spacefarer.admin@galaxy.example,2026-08-13T13:00:00Z,taldon008@gmail.com
+ID,name,stardustCollection,wormholeNav,originPlanet,spacesuitCol,department_ID,position_ID,createdAt,createdBy,modifiedAt,modifiedBy
+79806251-116e-4ebf-af9c-ae74a7a650c6,name-7980625,65,99,    Planet X,spacesuitCol-7980625,28921021-983a-424f-bb0f-a9ec8bbcd6ce,25898515-3770-4644-a401-5ee0d52fbe64,2002-11-03T23:00:00.000Z,createdBy.4r1w1@example.net,2021-02-10T23:00:00.000Z,modifiedBy.4r1w1@example.com
+7980626c-be45-40a0-81cf-2476a9976953,name-7980626,87,79,    Planet X,spacesuitCol-7980626,28921021-983a-424f-bb0f-a9ec8bbcd6ce,25898515-3770-4644-a401-5ee0d52fbe64,2007-10-17T23:00:00.000Z,createdBy.4r1w2@example.org,2003-08-27T23:00:00.000Z,modifiedBy.4r1w2@example.org
+7980627a-e868-4ec1-b20e-e2608729e3e0,name-7980627,88,31,    Planet X,spacesuitCol-7980627,28921021-983a-424f-bb0f-a9ec8bbcd6ce,25898515-3770-4644-a401-5ee0d52fbe64,2018-03-09T23:00:00.000Z,createdBy.4r1w3@example.net,2000-08-13T23:00:00.000Z,modifiedBy.4r1w3@example.org
+79806280-f59d-41c5-98ac-093df620525c,name-7980628,31,9,     Planet X,spacesuitCol-7980628,28921021-983a-424f-bb0f-a9ec8bbcd6ce,25898515-3770-4644-a401-5ee0d52fbe64,2002-06-29T23:00:00.000Z,createdBy.4r1w4@example.org,2023-08-15T23:00:00.000Z,modifiedBy.4r1w4@example.com
+79806293-6809-460d-a4a1-459878557cef,name-7980629,87,84,    Planet X,spacesuitCol-7980629,28921021-983a-424f-bb0f-a9ec8bbcd6ce,25898515-3770-4644-a401-5ee0d52fbe64,2019-12-29T23:00:00.000Z,createdBy.4r1w5@example.org,2018-05-04T23:00:00.000Z,modifiedBy.4r1w5@example.net
+79806300-5fba-4d99-9a1b-53fba9be771d,name-7980630,31,48,    Planet Y,spacesuitCol-7980630,28921021-983a-424f-bb0f-a9ec8bbcd6ce,25898515-3770-4644-a401-5ee0d52fbe64,2019-01-18T23:00:00.000Z,createdBy.4r1w6@example.org,2020-01-07T23:00:00.000Z,modifiedBy.4r1w6@example.com
+7980631a-aa17-4761-a8b9-01775fa14b44,name-7980631,91,3,     Planet Y,spacesuitCol-7980631,28921021-983a-424f-bb0f-a9ec8bbcd6ce,25898515-3770-4644-a401-5ee0d52fbe64,2018-06-13T23:00:00.000Z,createdBy.4r1w7@example.com,2001-07-28T23:00:00.000Z,modifiedBy.4r1w7@example.com
+7980632b-8ba2-4f6d-8b6c-10850a5314d4,name-7980632,39,65,    Planet Y,spacesuitCol-7980632,28921021-983a-424f-bb0f-a9ec8bbcd6ce,25898515-3770-4644-a401-5ee0d52fbe64,2020-05-02T23:00:00.000Z,createdBy.4r1w8@example.net,2020-09-25T23:00:00.000Z,modifiedBy.4r1w8@example.org
+79806339-cef4-4b3b-9462-e638651c2838,name-7980633,14,22,    Planet Y,spacesuitCol-7980633,28921021-983a-424f-bb0f-a9ec8bbcd6ce,25898515-3770-4644-a401-5ee0d52fbe64,2013-03-10T23:00:00.000Z,createdBy.4r1w9@example.org,2016-12-20T23:00:00.000Z,modifiedBy.4r1w9@example.com
+7980634e-7383-459c-b517-bc4b92746f21,name-7980634,68,48,    Planet Y,spacesuitCol-7980634,28921021-983a-424f-bb0f-a9ec8bbcd6ce,25898515-3770-4644-a401-5ee0d52fbe64,2020-11-24T23:00:00.000Z,createdBy.4r1wa@example.net,2003-12-24T23:00:00.000Z,modifiedBy.4r1wa@example.net
