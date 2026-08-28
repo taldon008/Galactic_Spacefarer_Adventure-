@@ -153,3 +153,20 @@ annotate service.Positions with {
     name @Common.FieldControl : #ReadOnly
 };
 
+//annotation to hide the status filter, found at https://help.sap.com/docs/ABAP_PLATFORM_NEW/468a97775123488ab3345a0c48cadd8f/8eb695ac473b4ab0a726e4021ce35cf4.html?locale=en-US
+annotate service.Spacefarers with @(
+Capabilities: {
+   NavigationRestrictions : {
+       $Type : 'Capabilities.NavigationRestrictionsType',
+       RestrictedProperties : [
+           {
+               $Type : 'Capabilities.NavigationPropertyRestriction',
+               NavigationProperty : DraftAdministrativeData,
+               FilterRestrictions : {
+                   $Type : 'Capabilities.FilterRestrictionsType',
+                   Filterable : false,
+               },
+           },
+       ],
+   },
+});
