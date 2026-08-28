@@ -92,11 +92,6 @@
           "pattern": "Spacefarers({key}):?query:",
           "name": "SpacefarersObjectPage",
           "target": "SpacefarersObjectPage"
-        },
-        {
-          "pattern": "Spacefarers({key})/Position({key2}):?query:",
-          "name": "PositionsObjectPage",
-          "target": "PositionsObjectPage"
         }
       ],
       "targets": {
@@ -134,24 +129,9 @@
             "settings": {
               "editableHeaderContent": false,
               "contextPath": "/Spacefarers",
-              "navigation": {
-                "Position": {
-                  "detail": {
-                    "route": "PositionsObjectPage"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "PositionsObjectPage": {
-          "type": "Component",
-          "id": "PositionsObjectPage",
-          "name": "sap.fe.templates.ObjectPage",
-          "options": {
-            "settings": {
-              "editableHeaderContent": false,
-              "contextPath": "/Spacefarers/Position"
+              "navigation": {},
+              "showRelatedApps": false,
+              "sectionLayout": "Tabs"
             }
           }
         }

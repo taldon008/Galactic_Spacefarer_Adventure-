@@ -36,6 +36,12 @@ annotate service.Spacefarers with @(
             Label : 'General Information',
             Target : '@UI.FieldGroup#GeneratedGroup',
         },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Label : 'Position',
+            ID : 'Position',
+            Target : '@UI.FieldGroup#Position',
+        },
     ],
     UI.LineItem : [
         {
@@ -79,6 +85,20 @@ annotate service.Spacefarers with @(
             Value : name,
         },
     },
+    UI.FieldGroup #Position : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : Position.name,
+                Label : '{i18n>Name}',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : Position.createdBy,
+            },
+        ],
+    },
 );
 
 annotate service.Spacefarers with {
@@ -104,11 +124,17 @@ annotate service.Spacefarers with {
 };
 
 annotate service.Spacefarers with {
-    name @Common.Label : '{i18n>Name}'
+    name @(
+        Common.Label : '{i18n>Name}',
+        Common.FieldControl : #Mandatory,
+    )
 };
 
 annotate service.Spacefarers with {
-    originPlanet @Common.Label : '{i18n>OriginPlanet}'
+    originPlanet @(
+        Common.Label : '{i18n>OriginPlanet}',
+        Common.FieldControl : #Mandatory,
+    )
 };
 
 annotate service.Spacefarers with {
@@ -123,3 +149,7 @@ annotate service.Spacefarers with {
     stardustCollection @Common.Label : '{i18n>Stardustcollection}'
     };
     
+annotate service.Positions with {
+    name @Common.FieldControl : #ReadOnly
+};
+
