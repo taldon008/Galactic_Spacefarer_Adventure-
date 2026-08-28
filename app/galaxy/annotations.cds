@@ -170,3 +170,19 @@ Capabilities: {
        ],
    },
 });
+
+annotate SpacefarerService.Spacefarers with {
+    originPlanet @(
+        Common.ValueList: {
+            CollectionPath: 'Planets',
+            Parameters: [
+                {
+                    $Type: 'Common.ValueListParameterInOut',
+                    LocalDataProperty: originPlanet,
+                    ValueListProperty: 'name'
+                }
+            ]
+        },
+        Common.ValueListWithFixedValues: true
+    );
+};

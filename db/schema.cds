@@ -13,6 +13,9 @@ entity Positions : cuid, managed {
     name : String(100);
 }
 
+entity Planets {
+    key name : String(100);
+}
 
 entity Spacefarers : cuid, managed {
     name                : String(100);
